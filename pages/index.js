@@ -1,34 +1,22 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import GridItem from "../components/gridItem";
+import gridStyles from "../components/gridItem.module.css";
+import pieceConfig from "../config/piecesConfig";
 
 export default function Home() {
+  const gridItems = pieceConfig.map((piece, index) => (
+    <GridItem index={index} title={piece.title} link={piece.link} color={piece.color} />
+  ));
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hi I'm a cool person.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <section>
+        <div className={gridStyles.gridContainer}>{gridItems}</div>
       </section>
-      <h1 className="title">
-          Read{' '}
-          <Link href="/posts/first-post">
-            <a>this page!</a>
-          </Link>
-        </h1>
-
-        <h1 className="title">
-          Read{' '}
-          <Link href="/pieces/01-typing-effect">
-            <a>typing page!</a>
-          </Link>
-        </h1>
     </Layout>
-  )
+  );
 }
