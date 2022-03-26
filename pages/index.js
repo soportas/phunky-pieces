@@ -5,8 +5,8 @@ import gridStyles from "../components/gridItem.module.css";
 import pieceConfig from "../config/piecesConfig";
 
 export default function Home() {
-  const gridItems = pieceConfig.map((piece, index) => (
-    <GridItem index={index} title={piece.title} link={piece.link} color={piece.color} />
+  const gridItems = pieceConfig.map((piece) => (
+    <GridItem index={piece.index} title={piece.title} link={piece.path} color={piece.color} />
   ));
 
   return (

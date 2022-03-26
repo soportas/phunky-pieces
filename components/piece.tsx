@@ -1,21 +1,29 @@
 import styles from "./piece.module.css";
 import utilStyles from "../styles/utils.module.css";
 import React from "react";
-import { PieceConfig } from "../config/piecesConfig";
+import Head from "next/head";
+import Layout from "./layout";
+import { useRouter } from "next/router";
+import { getPieceConfig } from "../config/piecesConfig";
 
-function Piece({ children, config }: PieceProps) {
+function Piece({ children }: PieceProps) {
+  const router = useRouter();
+  const config = getPieceConfig(router.pathname);
+
   return (
-    <>
+    <Layout home={false}>
+      <Head>
+        <title>{config.title}</title>
+      </Head>
       <div className={styles.colorBar} style={{ backgroundColor: config.color }}></div>
-      <h1 className={utilStyles.headingLg}>{config.title}</h1>
+      <h1 className={utilStyles.headingLg}>{`0${config.index}. ${config.title}`}</h1>
       {children}
-    </>
+    </Layout>
   );
 }
 
 type PieceProps = {
   children: React.ReactNode;
-  config: PieceConfig;
 };
 
 export default Piece;
