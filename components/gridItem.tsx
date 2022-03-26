@@ -7,8 +7,13 @@ function GridItem({ index, title, link, color }: GridItemProps) {
     <Link href={link}>
       <a>
         <div className={styles.gridItem} style={{ backgroundColor: color, borderColor: color }}>
+          <div className={styles.gridIndexSpace}>
+            <div className={styles.gridIndexTextbox}>
+              <p className={styles.gridIndexText}>{`PHUNKY PIECE --- 0${index}.`}</p>
+            </div>
+          </div>
           <div className={styles.gridContent}>
-            <h1 className={utilStyles.headingLg}>{`0${index}. ${title}`}</h1>
+            <h1 className={styles.gridHeading}>{title}</h1>
           </div>
         </div>
       </a>
