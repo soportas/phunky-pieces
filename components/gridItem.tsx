@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./gridItem.module.css";
-import utilStyles from "../styles/utils.module.css";
 
 function GridItem({ index, title, link, color }: GridItemProps) {
   return (
