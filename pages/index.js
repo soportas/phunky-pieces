@@ -2,11 +2,11 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import GridItem from "../components/gridItem";
 import gridStyles from "../components/gridItem.module.css";
-import pieceConfig from "../config/piecesConfig";
+import pieceConfig, { getPieceColor } from "../config/piecesConfig";
 
 export default function Home() {
   const gridItems = pieceConfig.map((piece) => (
-    <GridItem index={piece.index} title={piece.title} link={piece.path} color={piece.color} />
+    <GridItem index={piece.index} title={piece.title} link={piece.path} color={getPieceColor(piece.index)} />
   ));
 
   return (
