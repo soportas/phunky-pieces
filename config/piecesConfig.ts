@@ -19,8 +19,8 @@ const config: PieceConfig[] = [
     index: 1,
   },
   {
-    title: "Thingy 2 Effect",
-    path: "/pieces/02-thingy",
+    title: "Frosted Glass Effect",
+    path: "/pieces/02-frosted-glass-effect",
     color: "#a80000",
     index: 2,
   },
