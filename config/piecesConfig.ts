@@ -13,8 +13,8 @@ const config: PieceConfig[] = [
     index: 0,
   },
   {
-    title: "Thingy 1 Effect",
-    path: "/pieces/01-thingy",
+    title: "See-through Text",
+    path: "/pieces/01-see-through-text",
     color: "#E66C37",
     index: 1,
   },

@@ -1,0 +1,16 @@
+.page {
+  margin: 20px 0;
+}
+
+.seethroughText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("/images/color-bg.jpg");
+  background-size: 100%;
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 180px;
+  text-align: center;
+  margin: 0;
+}
