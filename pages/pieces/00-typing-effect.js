@@ -7,11 +7,12 @@ export default function MyPiece() {
   const speed = 30;
 
   let [index, setIndex] = useState(0);
+  let [typedText, setTypedText] = useState("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (index < typewriterText.length) {
-        document.getElementById("typing-effect-demo").innerHTML += typewriterText.charAt(index);
+        setTypedText(typedText + typewriterText.charAt(index));
         setIndex(index + 1);
       }
     }, speed);
@@ -22,7 +23,7 @@ export default function MyPiece() {
   return (
     <Piece>
       <div className={styles.page}>
-        <p id="typing-effect-demo"></p>
+        <p>{typedText}</p>
       </div>
     </Piece>
   );
