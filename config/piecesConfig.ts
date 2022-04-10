@@ -26,8 +26,8 @@ const config: PieceConfig[] = [
     index: 3,
   },
   {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
+    title: "Hoverable Header",
+    path: "/pieces/04-hoverable-header",
     index: 4,
   },
   {

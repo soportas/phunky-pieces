@@ -5,6 +5,7 @@ import "@fontsource/roboto-mono/400.css";
 import "@fontsource/roboto-mono/600.css";
 import "@fontsource/roboto-mono/700.css";
 import "@fontsource/oxanium/400.css";
+import "@fontsource/inter/600.css";
 
 import { AppProps } from "next/app";
 

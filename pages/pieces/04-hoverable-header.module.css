@@ -1,0 +1,50 @@
+.container {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin: 50px 300px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  width: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.header > img {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerText {
+  margin: 0;
+}
+
+.headerText:hover {
+  color: #02ced1;
+}
+
+.headerUnderlineCover {
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  height: 19px;
+  right: 0;
+  width: 100%;
+  transition: width 0.2s;
+}
+
+.header:hover > .headerUnderlineCover {
+  width: 0;
+}
+
+.headerLine {
+  max-width: none;
+}
