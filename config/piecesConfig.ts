@@ -21,8 +21,8 @@ const config: PieceConfig[] = [
     index: 2,
   },
   {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
+    title: "Screen Curtain Effect",
+    path: "/pieces/03-screen-curtain-effect",
     index: 3,
   },
   {

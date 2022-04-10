@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  margin-top: 50px;
+  height: 550px;
+  width: 100%;
+  background-image: url("/images/black-bg.jpg");
+  background-size: cover;
+}
+
+.curtainLeft {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transition: width 1s ease-out;
+}
+
+.curtainLeftOpen {
+  width: 0;
+}
+
+.curtainRight {
+  position: absolute;
+  background-color: black;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transition: width 1s ease-out;
+}
+
+.curtainRightOpen {
+  width: 0;
+}
+
+.lineContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curtainLine {
+  z-index: 2;
+  border-left: 1px solid #ef6d1a;
+  border-right: 1px solid #ef6d1a;
+  height: 5px;
+  width: 0;
+  left: 50%;
+  transition: height 1.2s ease-in, width 1s ease-out, border-left 1s ease-out, border-right 1s ease-out;
+}
+
+.curtainLoad {
+  border-left: 1px solid #ef6d1a;
+  border-right: 1px solid #ef6d1a;
+  height: 450px;
+  width: 0;
+}
+
+.curtainOpen {
+  border-left: 2px solid #ef6d1a;
+  border-right: 2px solid #ef6d1a;
+  height: 550px;
+  width: 100%;
+}
+
+.curtainFinished {
+  border-left: 0 solid #ef6d1a;
+  border-right: 0 solid #ef6d1a;
+  height: 550px;
+  width: 100%;
+}
