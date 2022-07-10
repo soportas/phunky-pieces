@@ -30,51 +30,51 @@ const config: PieceConfig[] = [
     path: "/pieces/04-hoverable-header",
     index: 4,
   },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 5,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 6,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 7,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 8,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 9,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 10,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 11,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 12,
-  },
-  {
-    title: "Typing Effect",
-    path: "/pieces/01-typing-effect",
-    index: 13,
-  },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 5,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 6,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 7,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 8,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 9,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 10,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 11,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 12,
+  // },
+  // {
+  //   title: "Typing Effect",
+  //   path: "/pieces/01-typing-effect",
+  //   index: 13,
+  // },
 ];
 
 export default config;

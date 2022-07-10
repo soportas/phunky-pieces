@@ -24,9 +24,10 @@
 
 .headerText {
   margin: 0;
+  transition: color 0.2s;
 }
 
-.headerText:hover {
+.header:hover > .headerText {
   color: #02ced1;
 }
 
