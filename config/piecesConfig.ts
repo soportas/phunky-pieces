@@ -105,4 +105,9 @@ export function getPieceConfig(path: string): PieceConfig {
       return configItem;
     }
   }
+  return {
+    title: "",
+    path: undefined,
+    index: undefined,
+  };
 }
